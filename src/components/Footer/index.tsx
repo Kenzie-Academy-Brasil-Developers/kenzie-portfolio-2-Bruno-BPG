@@ -21,10 +21,12 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you! {/* <HandEffect /> */}
+              Obrigado pela visita! {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk
+            Me siga no linkedin e vamos conversar
+            {/* Me siga nas minhas redes sociais e vamos conversar */}
+
             </Text>
           </Box>
         </Flex>
@@ -35,7 +37,7 @@ export const Footer = (): JSX.Element => {
             gap: "$2",
           }}
         >
-          <Button
+          {/* <Button
             className="instagram"
             type="circle"
             as="a"
@@ -43,8 +45,8 @@ export const Footer = (): JSX.Element => {
             href={`https://instagram.com/${userData.instagramUser}`}
           >
             <FaInstagram />
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             className="facebook"
             type="circle"
             as="a"
@@ -52,7 +54,7 @@ export const Footer = (): JSX.Element => {
             href={`https://fb.com/${userData.facebookUser}`}
           >
             <FaFacebookF />
-          </Button>
+          </Button> */}
           <Button
             className="linkedin"
             type="circle"
