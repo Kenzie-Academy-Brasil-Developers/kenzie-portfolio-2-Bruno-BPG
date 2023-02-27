@@ -1,31 +1,26 @@
-// Styles
-import { Container, Flex } from "@/styles/Global";
+import { Container } from "@/styles/Global";
 import { Text } from "@/styles/Text";
-import { Button } from "@/styles/Buttons";
 
-// Components
 import { Stack } from "@/components/Stack";
-import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
-// Data
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 import { FaGithub } from "react-icons/fa";
 
-// Page Style
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
+
 import {
   Header,
   HeaderContent,
-  HeaderButtonsArea,
-  UserImage,
   StackCards,
   ProjectsArea,
-  ProjectsAreaSocialMediaMessage,
-  ProjectAreaWrapperColumns,
-  ProjectsAreaContent,
 } from "./style";
+
+import Cards2 from "@/components/Cards";
+
+import { StyleHome, StyleCard } from "./style2";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
@@ -36,37 +31,25 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <Flex>
-              <UserImage
-                src={`https://github.com/${userData.githubUser}.png`}
-                alt={userData.nameUser}
-                title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
-              />
-              <Text color="grey4">olá, meu nome é {userData.nameUser}</Text>
-            </Flex>
-            <Text as="h1" type="heading1" color="grey5">
-              Sou um desenvolvedor
-            </Text>
-            <Text type="body1" color="grey2">
-              Veja aqui meus principais projetos e tecnologias
-            </Text>
-            <HeaderButtonsArea>
-              <Button as="a" type="primary" href="#projects">
-                projetos
-              </Button>
-              <Button
-                color="grey5"
-                as="a"
-                css={{ "&:hover": { color: "$grey1" } }}
-                type="circle"
-                target="_blank"
-                href={gihubUrl}
-              >
-                <FaGithub />
-              </Button>
-            </HeaderButtonsArea>
+            <StyleHome>
+              <div className="conteinerHome">
+                <div className="ajustar1">
+                  <img
+                    className="imgUser"
+                    src="https://avatars.githubusercontent.com/u/91001161?v=4"
+                    alt="foto de perfil"
+                  />
+                </div>
+                <span className="ajustar1">
+                  Olá, meu nome é Bruno Prado Gomes
+                </span>
+                <span className="ajustar1">Sou um desenvolvedor</span>
+                <span className="ajustar1">
+                  Veja aqui minhas principais tecnologias e projetos
+                </span>
+              </div>
+            </StyleHome>
+
             <StackCards>
               {stackData.map((stack, index) => (
                 <Stack key={index} title={stack.title} icon={stack.img} />
@@ -77,22 +60,12 @@ export const Home = (): JSX.Element => {
       </Header>
       <ProjectsArea id="projects">
         <Container>
-          <ProjectAreaWrapperColumns>
-            <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
-                Meus projetos
-              </Text>
-              <Text as="p" type="body1" color="grey2">
-                  Alguns dos meus projetos paralelos
-              </Text>
-            </ProjectsAreaSocialMediaMessage>
-            <ProjectsAreaContent>
-              <Project />
-            </ProjectsAreaContent>
-          </ProjectAreaWrapperColumns>
+
+            <Cards2></Cards2>
+
         </Container>
       </ProjectsArea>
-      <Contacts />
+      {/* <Contacts /> */}
     </main>
   );
 };

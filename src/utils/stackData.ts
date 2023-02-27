@@ -10,6 +10,12 @@ import {
   FaReact,
 } from "react-icons/fa";
 
+import { AiFillGithub } from "react-icons/ai";
+
+export const icons2 = {
+  "gitHub":AiFillGithub
+}
+
 export const stackData = [
   {
     title: "HTML",
