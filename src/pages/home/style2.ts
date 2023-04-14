@@ -1,6 +1,13 @@
 import styled from "styled-components";
+import dots from "@/public/static/img/background/dots.svg";
 
 export const StyleHome = styled.div`
+
+header{
+    background-color:#121214;
+    /* background-color: blue; */
+    padding: 2rem;
+}
 
 .conteinerHome{
     font-size: 19px;
@@ -13,13 +20,34 @@ export const StyleHome = styled.div`
 }
 
 .imgUser{
-    width: 150px;
+    width: 200px;
     border-radius: 100px;
+    margin-top: 120px;
     margin-bottom: 10px;
 }
+
+.conteiner2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 22px;
+}
+
+.conteiner3{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    flex-wrap: wrap;
+}
+
+.card2{
+    /* background-color: red; */
+    padding: 30px;
+}
+
   
 `
-
 export const StyleCard = styled.div`
 
 color: aliceblue;

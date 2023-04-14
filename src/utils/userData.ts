@@ -58,4 +58,11 @@ export const arrProjetos = [
   linkGitHub: "https://github.com/Kenzie-Academy-Brasil-Developers/m1-entrega-s3-ecommerce-Bruno-BPG",
   descrisao: "O projeto de conclusao do primeiro módulo do curso da Kenzie Academy. Utilizei HTML, CSS, e JavaScript, Fiz um Ecomerce de página única com dois tipos de filtros e carrinho.",
 },
+{
+  nome: "jogo Da Velha",
+  linkDeploy: "https://jogo-da-velha-puce-pi.vercel.app/",
+  linkVideo: "Sem video",
+  linkGitHub: "https://github.com/Bruno-BPG/Jogo-Da-Velha",
+  descrisao: "Um classico jogo da velha ussando react e typeScript",
+},
 ];

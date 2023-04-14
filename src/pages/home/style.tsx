@@ -8,25 +8,25 @@ import backgroundImg from "../../public/static/img/background/header-bg.svg";
 
 import dots from "@/public/static/img/background/dots.svg";
 
-export const Header = styled("header", {
-  backgroundColor: "$grey1",
-  padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${backgroundImg})`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "right",
-  backgroundAttachment: "fixed",
-  borderBottom: "2px solid $grey5",
-  "@tablet": {
-    backgroundPosition: "right -10% center",
-  },
-  "@mobile": {
-    padding: "9rem 0 6rem 0",
-    backgroundImage: `none`,
-  },
-  "@mobileLittle": {
-    padding: "9rem 0 0 0",
-  },
-});
+// export const Header = styled("header", {
+//   // backgroundColor: "black",
+//   // padding: "12rem 0 8rem 0",
+//   // backgroundImage: `url(${backgroundImg})`,
+//   // backgroundRepeat: "no-repeat",
+//   // backgroundPosition: "right",
+//   // backgroundAttachment: "fixed",
+//   // borderBottom: "2px solid $grey5",
+//   // "@tablet": {
+//   //   backgroundPosition: "right -10% center",
+//   // },
+//   // "@mobile": {
+//   //   padding: "9rem 0 6rem 0",
+//   //   backgroundImage: `none`,
+//   // },
+//   // "@mobileLittle": {
+//   //   padding: "9rem 0 0 0",
+//   // },
+// });
 
 export const HeaderContent = styled("div", {
   maxWidth: "100%",
@@ -79,26 +79,26 @@ export const StackSection = styled("div", {
 });
 
 export const StackCards = styled("div", {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr 1fr",
-  padding: "3rem 0",
-  gap: "6rem",
-  marginTop: "$4",
+  // display: "grid",
+  // // gridTemplateColumns: "1fr 1fr 1fr 1fr",
+  // padding: "3rem 0",
+  // gap: "6rem",
+  // marginTop: "$4",
 
-  "@tablet": {
-    gridTemplateColumns: "1fr 1fr 1fr",
-  },
+  // "@tablet": {
+  //   gridTemplateColumns: "1fr 1fr 1fr",
+  // },
 
-  "@mobile": {
-    gridTemplateColumns: "1fr 1fr",
-  },
+  // "@mobile": {
+  //   gridTemplateColumns: "1fr 1fr",
+  // },
 
-  "@mobileLittle": {
-    display: "flex",
-    overflow: "auto",
-    margin: "0 -1rem",
-    paddingInline: "1rem",
-  },
+  // "@mobileLittle": {
+  //   display: "flex",
+  //   overflow: "auto",
+  //   margin: "0 -1rem",
+  //   paddingInline: "1rem",
+  // },
 });
 
 export const ProjectsArea = styled("section", {

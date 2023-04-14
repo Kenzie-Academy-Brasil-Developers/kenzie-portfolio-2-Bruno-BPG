@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const StyleCard = styled.div`
 
+border-top: solid #623CEA 2px;
+padding-top: 30px;
+padding-bottom: 50px;
 color: aliceblue;
+background-color: #121214;
 
 .ajustingTextCenter{
     display: flex;
@@ -25,33 +29,30 @@ a{
 .card{
     height: 230px;
     width: 202px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .imgDeProjeto{
     width: 200px;
     height: 100px;
     cursor: pointer;
+    border: 0.1px solid white;
 }
 
-
-
-
-
-
-
-
-
+.conteiner3{
+    display: flex;
+    justify-content: center;
+}
 
 
 .conteinerCards{
-    padding-left: 10px;
-    padding-right: 10px;
     display: flex;
-    background-color: rgb(27, 26, 26);
-    overflow-x: scroll;
+    width: 1300px;
+    flex-wrap: wrap;
+    /* background-color: rgb(27, 26, 26); */
+    /* overflow-x: scroll; */
 }
-
+/* 
 .conteinerCards::-webkit-scrollbar-track{
 	background-color: #D0D4CE;
 }
@@ -63,7 +64,7 @@ a{
 
 .conteinerCards::-webkit-scrollbar-thumb{
 	background-color: #71806B;
-}
+} */
 
 
 
